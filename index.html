@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador de Pesquisa e Estruturas Organizacionais</title>
+<style>
+body{margin:0;font-family:Arial;background:#f2f4f8}
+header{background:linear-gradient(135deg,#4a148c,#7b1fa2);color:white;padding:20px;text-align:center}
+section{padding:16px}
+.card{background:white;border-radius:12px;padding:14px;margin-bottom:16px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+.rule{font-size:14px;margin-bottom:8px}
+.question{margin-bottom:22px}
+label{display:block;background:#eef1f6;padding:8px;border-radius:8px;margin-bottom:6px;cursor:pointer}
+.correct{background:#d4edda!important}
+.wrong{background:#f8d7da!important}
+.explanation{display:none;font-size:13px;margin-top:6px}
+button{width:100%;padding:14px;background:#4a148c;color:white;border:none;border-radius:12px;font-size:18px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>📚 Código da Pesquisa e Gestão Organizacional</h1>
+<p>Simulador Prático de Tomada de Decisão Acadêmica e Empresarial</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>🔬 30 Princípios da Pesquisa Científica</h2>
+
+<div class="rule">1. Pesquisa é um processo sistemático de construção do conhecimento.</div>
+<div class="rule">2. Pesquisa bibliográfica utiliza livros, artigos e publicações científicas.</div>
+<div class="rule">3. Pesquisa de campo coleta dados diretamente na realidade estudada.</div>
+<div class="rule">4. Pesquisa laboratorial ocorre em ambiente controlado.</div>
+<div class="rule">5. Pesquisa acadêmica segue rigor metodológico formal.</div>
+<div class="rule">6. Problema de pesquisa deve ser claro e delimitado.</div>
+<div class="rule">7. Hipóteses orientam investigações científicas.</div>
+<div class="rule">8. Método qualitativo analisa fenômenos subjetivos.</div>
+<div class="rule">9. Método quantitativo utiliza dados numéricos.</div>
+<div class="rule">10. Pesquisa exploratória busca compreender fenômenos pouco estudados.</div>
+<div class="rule">11. Pesquisa descritiva detalha características de determinado fenômeno.</div>
+<div class="rule">12. Pesquisa explicativa busca identificar causas.</div>
+<div class="rule">13. Fontes primárias são dados originais.</div>
+<div class="rule">14. Fontes secundárias interpretam dados já existentes.</div>
+<div class="rule">15. Artigos científicos passam por revisão por pares.</div>
+<div class="rule">16. Referências devem seguir normas acadêmicas.</div>
+<div class="rule">17. Ética é princípio fundamental da pesquisa.</div>
+<div class="rule">18. Plágio é prática proibida.</div>
+<div class="rule">19. Inovação nasce da pesquisa estruturada.</div>
+<div class="rule">20. Resultados devem ser analisados criticamente.</div>
+<div class="rule">21. Questionários são instrumentos de coleta de dados.</div>
+<div class="rule">22. Entrevistas permitem aprofundamento qualitativo.</div>
+<div class="rule">23. Observação é método de coleta direta.</div>
+<div class="rule">24. Pesquisa aplicada visa resolver problemas práticos.</div>
+<div class="rule">25. Pesquisa básica amplia conhecimento teórico.</div>
+<div class="rule">26. Revisão bibliográfica fundamenta o estudo.</div>
+<div class="rule">27. Metodologia deve ser descrita com clareza.</div>
+<div class="rule">28. Amostra deve representar a população estudada.</div>
+<div class="rule">29. Conclusão deve responder ao problema inicial.</div>
+<div class="rule">30. Pesquisa bem conduzida gera inovação sustentável.</div>
+
+</div>
+
+<div class="card">
+<h2>🏢 20 Princípios das Estruturas Organizacionais</h2>
+
+<div class="rule">1. Estrutura organizacional define responsabilidades.</div>
+<div class="rule">2. Sistema hierárquico organiza níveis de autoridade.</div>
+<div class="rule">3. Organizações podem ser centralizadas ou descentralizadas.</div>
+<div class="rule">4. Gestão eficiente exige planejamento estratégico.</div>
+<div class="rule">5. Tomada de decisão pode ser individual ou colegiada.</div>
+<div class="rule">6. Organograma representa estrutura formal.</div>
+<div class="rule">7. Liderança influencia resultados organizacionais.</div>
+<div class="rule">8. Comunicação interna deve ser clara.</div>
+<div class="rule">9. Processos organizacionais precisam ser definidos.</div>
+<div class="rule">10. Inovação depende de cultura organizacional aberta.</div>
+<div class="rule">11. Estrutura funcional organiza por departamentos.</div>
+<div class="rule">12. Estrutura matricial combina funções e projetos.</div>
+<div class="rule">13. Estrutura divisional organiza por produtos ou regiões.</div>
+<div class="rule">14. Planejamento orienta decisões estratégicas.</div>
+<div class="rule">15. Controle avalia desempenho organizacional.</div>
+<div class="rule">16. Delegação distribui responsabilidades.</div>
+<div class="rule">17. Organizações precisam de missão e visão definidas.</div>
+<div class="rule">18. Governança corporativa estabelece regras éticas.</div>
+<div class="rule">19. Decisões devem considerar análise de dados.</div>
+<div class="rule">20. Estruturas eficientes favorecem inovação.</div>
+
+</div>
+
+<div class="card">
+<h2>🎯 Quiz</h2>
+
+<script>
+
+const perguntas = [
+
+["\"Um estudante decide iniciar TCC sem revisar literatura.\nEle baseia o trabalho apenas em opinião pessoal.\" Pesquisa sem revisão bibliográfica.",1,"Resposta correta: NEGAR. Toda pesquisa acadêmica exige fundamentação teórica baseada em fontes confiáveis. Sem revisão bibliográfica, o trabalho perde rigor científico e validade acadêmica."],
+
+["\"Pesquisador aplicou questionário estruturado para coletar dados numéricos.\" Uso de método quantitativo.",0,"Resposta correta: APROVAR. O método quantitativo é adequado quando se busca analisar dados numéricos de forma estatística."],
+
+["\"Empresa quer inovar, mas não realiza pesquisa de mercado.\" Inovação sem pesquisa.",1,"Resposta correta: NEGAR. A inovação sustentável depende de pesquisa estruturada e análise de dados confiáveis."],
+
+["\"Aluno realiza entrevistas presenciais para compreender comportamento social.\" Método qualitativo.",0,"Resposta correta: APROVAR. Entrevistas são instrumentos típicos da pesquisa qualitativa."],
+
+["\"Projeto utiliza dados originais coletados diretamente da população.\" Uso de fonte primária.",0,"Resposta correta: APROVAR. Fontes primárias fornecem dados originais essenciais para pesquisa científica."],
+
+["\"Trabalho copia trechos de artigo sem citar autor.\" Plágio acadêmico.",1,"Resposta correta: NEGAR. Plágio é prática antiética e proibida no meio acadêmico."],
+
+["\"Organização possui estrutura com níveis bem definidos de autoridade.\" Sistema hierárquico formal.",0,"Resposta correta: APROVAR. Sistemas hierárquicos organizam responsabilidades e decisões."],
+
+["\"Empresa concentra todas decisões apenas no diretor geral.\" Centralização extrema.",2,"Resposta correta: APROVAR COM AJUSTES. Embora possível, excesso de centralização pode prejudicar eficiência e inovação."],
+
+["\"Startup adota estrutura matricial para integrar projetos.\" Estrutura matricial.",0,"Resposta correta: APROVAR. Estrutura matricial combina funções e projetos de forma estratégica."],
+
+["\"Pesquisa foi conduzida sem definição clara do problema.\" Falta de problema delimitado.",1,"Resposta correta: NEGAR. O problema de pesquisa é ponto de partida fundamental."],
+
+["\"Equipe utilizou observação direta como método.\" Observação científica.",0,"Resposta correta: APROVAR. Observação é método válido de coleta de dados."],
+
+["\"Empresa decide expandir sem planejamento estratégico.\" Decisão sem planejamento.",1,"Resposta correta: NEGAR. Planejamento estratégico orienta decisões organizacionais."],
+
+["\"Estudo descreve características de fenômeno específico.\" Pesquisa descritiva.",0,"Resposta correta: APROVAR. Pesquisa descritiva detalha fenômenos observados."],
+
+["\"Projeto amplia conhecimento teórico sem aplicação imediata.\" Pesquisa básica.",0,"Resposta correta: APROVAR. Pesquisa básica desenvolve conhecimento científico."],
+
+["\"Organização não define missão nem visão.\" Ausência de direcionamento estratégico.",1,"Resposta correta: NEGAR. Missão e visão orientam identidade organizacional."],
+
+["\"Gestor delega tarefas mantendo supervisão adequada.\" Delegação eficiente.",0,"Resposta correta: APROVAR. Delegação fortalece gestão eficiente."],
+
+["\"Pesquisa utiliza amostra que não representa população.\" Amostra inadequada.",1,"Resposta correta: NEGAR. Amostra deve representar universo estudado."],
+
+["\"Empresa adota governança corporativa para decisões éticas.\" Governança aplicada.",0,"Resposta correta: APROVAR. Governança fortalece transparência e ética."],
+
+["\"Projeto ignora análise crítica dos resultados.\" Conclusão sem análise.",1,"Resposta correta: NEGAR. Resultados devem ser analisados criticamente."],
+
+["\"Instituição integra pesquisa estruturada ao planejamento estratégico.\" Pesquisa como inovação.",0,"Resposta correta: APROVAR. Pesquisa estruturada é caminho para inovação organizacional."]
+
+];
+
+document.write(perguntas.map((p,i)=>`
+<div class="question">
+<p><strong>Caso ${i+1}:</strong> ${p[0]}</p>
+<label><input type="radio" name="q${i}" value="0"> Aprovar</label>
+<label><input type="radio" name="q${i}" value="1"> Negar</label>
+<label><input type="radio" name="q${i}" value="2"> Aprovar com ajustes</label>
+<label><input type="radio" name="q${i}" value="3"> Solicitar estudo adicional</label>
+<div class="explanation">${p[2]}</div>
+</div>
+`).join(""));
+
+</script>
+
+<button onclick="corrigir()">Enviar respostas</button>
+
+</div>
+</section>
+
+<script>
+function corrigir(){
+document.querySelectorAll('.question').forEach((q,idx)=>{
+const correta=perguntas[idx][1];
+q.querySelectorAll('label').forEach(l=>{
+const i=l.querySelector('input');
+if(i.checked){
+if(Number(i.value)===correta){l.classList.add('correct')}
+else{l.classList.add('wrong')}
+q.querySelector('.explanation').style.display="block";
+}
+});
+});
+}
+</script>
+
+</body>
+</html>
